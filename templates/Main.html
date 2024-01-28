@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatterbots</title>
+    <link href="https://fonts.cdnfonts.com/css/blanka" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Css/main.css') }}">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+</head>
+
+<body>
+    <div class="full_body">
+        <div class="Split_area">
+            <div class="Nav_Bar">
+                <div class="Logo">
+                    <img src="{{ url_for('static', filename='imgs/Logo.png')}}">
+                </div>
+                <div class="Server_joined">
+                    <div class="Server_joined_static">
+                        Current server:
+                    </div>
+                    <div class="Server_joined_dynamic">
+                        None
+                    </div>
+                </div>
+                <div class="Servers_to_join">
+                    <ul class="List_of_servers">
+                    </ul>
+                </div>
+            </div>
+            <div class="Body">
+                <ul style="list-style-type: none;">
+                    {% for msg in msgs %}
+                        <li class="messages">{{msg}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="Client_Bar">
+                <form class="submit_text" method="post">
+                    <div class="Text_box">
+                        <input type="text" name="input" placeholder="MSG">
+                    </div>
+                    <div class="Send_button">
+                        <button><img src="{{ url_for('static', filename='imgs/send.png')}}" alt="Send"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

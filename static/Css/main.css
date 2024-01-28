@@ -1,0 +1,126 @@
+@media only screen and (min-width: 600px) {
+body {
+    background-image: linear-gradient(gray, lightgray);
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Logo {
+    justify-content: center;
+}
+
+.Logo img {
+    width: 60%;
+}
+
+.Split_area {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.Footer {
+    text-align: center;
+    height: 100%;
+    width: 75%;
+    border-color: black;
+    border: 3px;
+    border-style: groove;
+}
+
+.Text_box {
+    border-radius: 10%;
+    padding-left: 2px;
+}
+
+.Text_box input{
+    width: 100%;
+    font-size: 120%;
+    height: 100%;
+}
+
+.Servers_to_join {
+    overflow: hidden;
+    height: 70%;
+}}
+
+.Send_button img{
+    width:100%;
+    height:auto;
+}
+
+.Send_button button {
+    width: 70%;
+}
+
+.Client_Bar {
+    display: grid;
+    grid-template-columns: 95% 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: linear-gradient(gray, lightgray);
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Logo img {
+        width: 15%;
+    }
+    
+    .Split_area {
+        position: fixed;
+    }
+    
+    .Footer {
+
+        position: fixed;
+        text-align: center;
+        height: 17%;
+        left:2px;
+        bottom: 1px;
+        width: 101%;
+        border-color: black;
+        border-top: 3px;
+        border-bottom: 0;
+        border-left:0;
+        border-right: 0;
+        border-style: groove;
+        margin: 0;
+    }
+
+    .Client_Bar {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        -ms-transform: translateY(50%);
+        transform: translateY(75%);
+    }
+
+    .Send_button {
+        padding-left: 10%;
+        top: 0%;
+        width: 10%;
+    }
+
+    .Send_button button {
+        background-color: transparent;
+        border:0;
+    }
+
+    .Send_button img {
+        width: 100%;
+    }
+    
+    .Text_box input{
+        width: 100%;
+        font-size: 120%;
+        border-radius: 10px;
+    }
+    
+    .Servers_to_join {
+        overflow: hidden;
+        height: 70%;
+    }}
