@@ -1,0 +1,46 @@
+.Projects {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    row-gap: 40px;
+    align-content: center;
+    width: 100%;
+}
+
+.Grid_spot {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 45px;
+    height: 400px;
+    
+    width: 60%;
+    background-color: black;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.Img {
+    display: flex;
+    justify-content: center;
+}
+
+.Img img{
+    width: 65%;
+    height:auto;
+}
+
+.Text {
+    text-align: center;
+    width: 90%;
+    color:aqua;
+}

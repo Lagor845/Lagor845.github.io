@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    background-image: url("../imgs/Main_Background.jpg");
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.Heading {
+    font-family: 'Blanka', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: aqua;
+}
+
+.Nav-Bar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Nav-Bar a {
+    text-decoration: none;
+    color:aqua;
+}
